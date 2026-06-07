@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Phuc Tran | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">My Portfolio</div>
+        
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="dark-mode-toggle">Dark Mode</button>
+    </nav>
+
+    <!-- Hero / About Section -->
+    <header id="about">
+        <div class="hero-content">
+            <h1>Hello, I'm Nguyen Phuc Tran</h1>
+
+            <p>
+                Global Career Accelerator student enrolled in 
+                Coding for Web Development learning HTML, CSS,
+                JavaScript, and modern web technologies.
+                This website showcases my projects and progress
+                throughout my college journey.
+            </p>
+
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo">
+            <p>Java</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Logo">
+            <p>C / C++</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo">
+            <p>Python</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Logo">
+            <p>HTML</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Logo">
+            <p>CSS</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo">
+            <p>JavaScript</p>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Infinite Tic-Tac-Toe</h3>
+                <p>
+                    A C++ CLI game where two players have only 3 Xs or Os.
+                    Learned how to use the Queue Data Structure, Header File, and Git.
+                </p>
+                <a href="https://github.com/UnsignedInteger255/Infinite-Tic-Tac-Toe">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Card Game</h3>
+                <p>
+                    A C++ CLI implementation of the Vietnamese card game called Bai Cao.
+                    Used Git, C++, VS Code.
+                </p>
+                <a href="#">View Project</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>Email: <a href="mailto:nt95@usf.edu">nt95@usf.edu</a></p>
+
+        <div class="social-links">
+            <a href="https://github.com/NguyenPhucTran">GitHub</a>
+            <a href="https://www.linkedin.com/in/nguyen-phuc-tran-0000b0381/">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nguyen Phuc. All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+        const button = document.getElementById("dark-mode-toggle");
+
+        button.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        
+            if (document.body.classList.contains("dark-mode")) {
+                button.textContent = "Light Mode";
+            } else {
+                button.textContent = "Dark Mode";
+            }
+        
+        });
+    </script>
+</body>
+</html>
